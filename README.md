@@ -1,0 +1,2 @@
+# ACCESS_MANAGEMENT_SYSTEM
+QRコードベースで管理するオンライン入退室管理システムです
