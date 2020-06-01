@@ -1,22 +1,27 @@
 # ACCESS_MANAGEMENT_SYSTEM
 GASで作成した，QRコードベースのオンライン入退室管理システムです
-<br>詳しい説明はこちらを参照してください
+<br>詳しい作成方法はこちらを参照してください
 <br>サンプルは[こちら](https://script.google.com/a/keio.jp/macros/s/AKfycbyx5Se-VGLI4hXxTJzO7RqUC_OKMA9NX6KvQl4vnA/exec?p=index)
 
-## Notice
-#### (1) ソースコード内にある「××××××××」は，各自の公開URLです．適切に変更してください
 
-#### (2)QRコードは各種無料ツールを使用して作成してください．
+## Notice
+#### (1) htmlファイル内にある「××××××××」は，GASで作成したwebアプリの公開URLです．変更してください
+
+#### (2) gsファイル内にある「××××××××」は，SpreadSheetのURL https://docs.google.com/spreadsheets/d/××××××××/edit の ×××××××× の部分です。
+
+#### (3)QRコードは各種無料ツールを使用して作成してください．
 
   生成するURLは以下の通りです
   
    * 入口に貼るQRコードのURL
   ```
   https://script.google.com/a/××××××××/exec?p=in
+  //「××××××××」は，GASで作成したwebアプリの公開URL
   ```
    * 出口に貼るQRコードのURL
   ```
   https://script.google.com/a/××××××××/exec?p=out
+  //「××××××××」は，GASで作成したwebアプリの公開URL
   ```
 
-#### (3)(2)のURLを踏んだら，人数が加減算される仕様になっています．そのため，URLのリロードで人数が増減してしまいますが，特に対策は講じておりません．ご了承ください．
+#### (4)(2)のURLを踏んだら，人数が加減算される仕様になっています．そのため，URLのリロードで人数が増減してしまいますが，特に対策は講じておりません．ご了承ください．
