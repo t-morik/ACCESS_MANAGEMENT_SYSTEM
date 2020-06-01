@@ -1,6 +1,7 @@
 # ACCESS_MANAGEMENT_SYSTEM
 GASで作成した，QRコードベースのオンライン入退室管理システムです
 <br>詳しい説明はこちらを参照してください
+<br>サンプルは[こちら](https://script.google.com/a/keio.jp/macros/s/AKfycbyx5Se-VGLI4hXxTJzO7RqUC_OKMA9NX6KvQl4vnA/exec?p=index)
 
 ## Notice
 #### (1) QRコードは各種無料ツールを使用して作成してください．
