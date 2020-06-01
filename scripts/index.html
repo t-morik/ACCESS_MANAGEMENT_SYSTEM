@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base target="_top">
+    <title>ACCESS MANAGEMENT SYSTEM</title>
+ 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- fontawesome　-->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+ 
+  </head>
+  <body>
+
+ 
+    <div class="container">
+      <div class="row align-items-center" style="height:8rem;">
+      </div>   
+      <div class="border-bottom mx-auto" style="max-width: 25rem;">
+        <div class="text-center"><h5>現在の入室人数</h5></div>
+        <div class="text-center"><h6>@○棟△号室</h6></div>
+        <div class="text-center"><span id="view_clock"></span></div>
+      </div>
+      <div class="list-inline text-center">
+        <i class="list-inline-item fas fa-users fa-4x"></i>
+        <h1 class="list-inline-item text-danger display-1 "><?= num ?></h1>
+        <h5 class="list-inline-item text-muted small"> 名</h5>
+      </div>
+      <br/>
+      <div class="mx-auto" style="max-width: 30rem;">
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-body text-light bg-info text-center">
+              <a class="text-light" href="https://script.google.com/a/keio.jp/macros/s/AKfycbyx5Se-VGLI4hXxTJzO7RqUC_OKMA9NX6KvQl4vnA/exec?p=in">
+              <i class="fa fa-sign-in-alt fa-2x"></i>&nbsp;入室</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body text-light bg-secondary text-center">
+              <a class="text-light" href="https://script.google.com/a/keio.jp/macros/s/AKfycbyx5Se-VGLI4hXxTJzO7RqUC_OKMA9NX6KvQl4vnA/exec?p=out">
+              <i class="fas fa-sign-out-alt fa-2x"></i>&nbsp;退室</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    
+<!-- javascript -->
+<script type="text/javascript">
+timerID = setInterval('clock()',500); //0.5秒毎にclock()を実行
+
+function clock() {
+	document.getElementById("view_clock").innerHTML = getNow();
+}
+
+function getNow() {
+	var now = new Date();
+	var year = now.getFullYear();
+	var mon = now.getMonth()+1; //１を足すこと
+	var day = now.getDate();
+	var hour = now.getHours();
+	var min = now.getMinutes();
+	var sec = now.getSeconds();
+
+	//出力用
+  var s = year + "年" + mon + "月" + day + "日&nbsp;" + hour + "時" + min + "分" ; 
+	return s;
+}
+</script>
+  </body>
+</html>
