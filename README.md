@@ -7,7 +7,11 @@ GASで作成した，QRコードベースのオンライン入退室管理シス
 ## Notice
 #### (1) htmlファイル内にある「××××××××」は，GASで作成したwebアプリの公開URLです．変更してください
 
-#### (2) gsファイル内にある「××××××××」は，SpreadSheetのURL https://docs.google.com/spreadsheets/d/××××××××/edit の ×××××××× の部分です。
+#### (2) gsファイル内にある「××××××××」は，SpreadSheetのURLにおける ×××××××× の部分です。
+
+```
+https://docs.google.com/spreadsheets/d/××××××××/edit 
+```
 
 #### (3)QRコードは各種無料ツールを使用して作成してください．
 
