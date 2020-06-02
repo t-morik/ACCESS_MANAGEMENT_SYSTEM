@@ -19,12 +19,12 @@ https://docs.google.com/spreadsheets/d/××××××××/edit
   
    * 入口に貼るQRコードのURL
   ```
-  https://script.google.com/a/××××××××/exec?p=in
+  https://script.google.com/××××××××/exec?p=in
   //「××××××××」は，GASで作成したwebアプリの公開URL
   ```
    * 出口に貼るQRコードのURL
   ```
-  https://script.google.com/a/××××××××/exec?p=out
+  https://script.google.com/××××××××/exec?p=out
   //「××××××××」は，GASで作成したwebアプリの公開URL
   ```
 
